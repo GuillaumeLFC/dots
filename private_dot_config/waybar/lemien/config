@@ -1,0 +1,23 @@
+{
+  "layer":"bottom",
+  "modules-left":["hyprland/workspaces"],
+  "modules-center":["clock"],
+  "modules-right":["pulseaudio","network", "cpu", "memory"],
+  "fixed-center":true,
+ 
+  "clock":{
+    "interval":60,
+    "format":"{:%H:%M}",
+    "tooltip":true,
+    "tooltip-format": "{%d-}",
+    },
+
+ "network": {
+        "format-wifi": "  {signalStrength}% ",
+        "tooltip-format": "{essid} - {bandwidthTotalOctets}",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Pas de réseau ⚠",
+        "format-alt": "{essid} - {bandwidthTotalOctets}"
+    },
+
+    }
