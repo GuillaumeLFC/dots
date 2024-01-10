@@ -23,21 +23,9 @@ local plugins = {
     opts = {
       ensure_installed = {
         "lua",
-        "hypr",
         "cpp",
       },
      },
-  },
-  {
-    "nvim-treesitter-highlight-mod",
-    config = function ()
-      require'nvim-treesitter.configs'.setup {
-        highlight = {
-          enable = true,
-          additional_vim_regex_highlighting = false,
-        },
-      }
-    end
   },
 }
 return plugins
