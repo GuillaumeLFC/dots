@@ -16,9 +16,6 @@ local plugins = {
     }
   },
   {
-    "luckasRanarison/tree-sitter-hypr",
-    },
-  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {

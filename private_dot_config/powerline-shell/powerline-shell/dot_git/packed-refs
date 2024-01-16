@@ -1,0 +1,22 @@
+# pack-refs with: peeled fully-peeled sorted 
+ac98fbeb6ae1285a89d0aa8ebfa5d97203b83a4b refs/remotes/origin/cwd-fix
+09fd45d6fc16f06b99ffdeede8f25e7bfeaf74d7 refs/remotes/origin/develop
+c9badb800bfcbf05ea0c3034fe7e13bb691565cb refs/remotes/origin/emansije-changes
+4d4241fba069d045fd06f942caf787b944549b0a refs/remotes/origin/emansije-merge
+4b19aa47f1a724c6b8d9713982045ceabfd507bc refs/remotes/origin/master
+a209e6b12de245b5077b97d11ee140e14bf9af70 refs/remotes/origin/release-0.5.0
+c59a3814034a6aca5e64c1f613301be315dbf60b refs/remotes/origin/svn-ignored-fix
+4b26d19907ae87a57fe9172c33fba7ec12cfa272 refs/remotes/origin/time-segment-colors
+71cfe579fff1b1f1c3af255908ba18f8eaa4f50f refs/tags/v
+35dd28dcacaec16aaea81da9fef6174b3dee89ab refs/tags/v0.3.1
+d54dd499c5bf281d949605f0aad86fd6cd34ac2c refs/tags/v0.4.1
+2f584024640aa8e519291955977d4cfec7e4d841 refs/tags/v0.4.2
+5a9f199e07a4ab9b4f5efcbba6e333b9adc20565 refs/tags/v0.4.3
+6ddc482c1378896600369e8b070cc1a1259ebe71 refs/tags/v0.4.4
+71cfe579fff1b1f1c3af255908ba18f8eaa4f50f refs/tags/v0.4.5
+dfa784c810d842d090cd9c564ed5a8eb5314fc8f refs/tags/v0.4.6
+ad27ed4ccc28f314d7985776b8e8663a33a67102 refs/tags/v0.4.7
+a494cd4a456d9ac1ad60b37830d04454fd28ef0b refs/tags/v0.4.9
+5563655d82ef164c139e3a3cad8136bdda0c7178 refs/tags/v0.5.2
+08c07fa1f13e63ffd140cf8c87f6d904227e75b5 refs/tags/v0.5.3
+73b01d659732637e72e4fe53fb430ccabc528d57 refs/tags/v0.5.4
