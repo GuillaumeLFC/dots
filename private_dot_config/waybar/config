@@ -4,15 +4,16 @@
     "layer": "top",
     "position": "top",
     "mod": "dock",
-    "height": 31,
+    "height": 20,
     "exclusive": true,
+    "margin-bottom":-10,
     "passthrough": false,
     "gtk-layer-shell": true,
 
 
 // positions generated based on config.ctl //
 
-	"modules-left": ["custom/padd","custom/arch","custom/r_end","clock","custom/spotify","custom/r_end","","custom/padd"],
+	"modules-left": ["custom/padd","custom/arch","custom/r_end","clock","hyprland/workspaces","custom/spotify","custom/r_end","","custom/padd"],
 	"modules-center": ["custom/padd","custom/l_end","mpris","custom/r_end","custom/padd"],
 	"modules-right": ["custom/padd","custom/l_end","tray","custom/r_end","custom/l_end","backlight","custom/r_end","network","bluetooth","custom/r_end","pulseaudio","pulseaudio#microphone","custom/r_end","custom/padd"],
 
@@ -55,7 +56,7 @@
 	},
 
     "clock": {
-        "format": " {:%H:%M %p}",
+        "format": "  {:%H:%M} ",
         "format-alt": "{:%R 󰃭 %d·%m·%y}",
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
@@ -98,7 +99,7 @@
 
     "backlight": {
         "device": "intel_backlight",
-        "format": "{icon} {percent}%",
+        "format": " {icon} {percent}% ",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "on-scroll-up": "brightnessctl set 1%-",
         "on-scroll-down": "brightnessctl set 1%+",
@@ -107,7 +108,7 @@
 
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "󰤨 {essid}",
+        "format-wifi": " 󰤨 {essid} ",
         "format-ethernet": "󱘖 Ethernet",
         "tooltip-format": " {bandwidthUpBytes}  {bandwidthDownBytes}",
         "format-linked": "󱘖 {ifname} (No IP)",
@@ -126,8 +127,8 @@
     },
 
     "pulseaudio": {
-        "format": "{icon} {volume}",
-        "format-muted": " Sourdine",
+        "format": " {icon} {volume}",
+        "format-muted": "  Sourdine",
         "on-click-right": "pavucontrol -t 3",
         "on-click": "pamixer -t",
         "on-scroll-up": "pamixer -d 1",
@@ -146,13 +147,11 @@
     },
 
     "pulseaudio#microphone": {
-        "format": "{format_source}",
+        "format": " {format_source} ",
         "format-source": "󰍮",
         "format-source-muted": "",
-        "on-click": "pavucontrol -t 4",
-        "on-click-middle": "~/.config/hypr/scripts/volumecontrol.sh -i m",
-        "on-scroll-up": "~/.config/hypr/scripts/volumecontrol.sh -i i",
-        "on-scroll-down": "~/.config/hypr/scripts/volumecontrol.sh -i d",
+        "on-click": "pamixer --source 1 -t ",
+        "on-click-right": "pavucontrol -t 4",
         "tooltip-format": "{format_source} {source_desc} // {source_volume}%",
         "scroll-step": 5
     },
@@ -162,8 +161,8 @@
       "interval":1,
       "album-len":0,
       "max-len": 60,
-      "format": "{player_icon} {artist} - {title}",
-      "format-paused": "{player_icon} {artist} - {title}",
+      "format": " {player_icon} {artist} - {title} ",
+      "format-paused": " {player_icon} {artist} - {title} ",
       "player-icons": {
         "default": "▶",
         "mpv": "🎵",
