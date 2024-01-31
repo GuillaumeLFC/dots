@@ -12,6 +12,11 @@ local plugins = {
       ensure_installed = {
         "clangd",
         "lua-language-server",
+        "typescript-language-server",
+        "eslint-lsp",
+        "prettier",
+        "markdownlint",
+        "latexindent"
       }
     }
   },
@@ -22,6 +27,7 @@ local plugins = {
         "lua",
         "cpp",
         "latex",
+        "typescript",
       },
      },
   },
@@ -32,7 +38,21 @@ local plugins = {
     build = function() vim.fn["mkdp#util#install"]() end,
   },
   {
-    "sirver/ultisnips",
+    "L3M0N4D3/LuaSnips",
+  },
+  {
+    "mfussenegger/nvim-lint",
+    event = "VeryLazy",
+    config = function ()
+      require"custom.configs.lint"
+    end
+  },
+  {
+    "mhartington/formatter.nvim",
+    event = "VeryLazy",
+    opts = function ()
+      return require "custom.configs.formatter"
+    end
   },
 }
 return plugins
