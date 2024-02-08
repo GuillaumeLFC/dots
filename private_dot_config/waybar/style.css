@@ -103,7 +103,7 @@ tooltip {
 #custom-arch {
   border-radius : 30px;
   background: #1e1e2e;
-  color: #2240FF;
+  color: #2791C9;
   margin-bottom: 8px;
   margin-top : 8px;
   padding : 5px;
@@ -132,7 +132,7 @@ tooltip {
   color: #cba6f7;
   border-left: 0px;
   border-right: 30px;
-  border-radius: 0px 40px 40px 10px;
+  border-radius: 0px 30px 30px 0px;
   margin-right: 5px;
 }
 
@@ -159,7 +159,7 @@ tooltip {
 }
 
 #clock {
-  color: #fab387;
+  color: #82AFC2;
   border-radius: 30px;
   /* margin-left: 10px; */
   padding: 5px;
