@@ -37,3 +37,20 @@ parser_config.jsonc.filetype_to_parsername = "json"
 
 require'lspconfig'.tsserver.setup{}
 
+require("lua.custom.configs.LuaSnip")
+
+require("luasnip").config.set_config({ -- Setting LuaSnip config
+
+  enable_autosnippets = true,
+
+  store_selection_keys = "<Tab>",
+})
+
+vim.cmd([[ 
+imap <silent><expr> <Tab> luasnip#expandable() ? '<Plug>luasnip-expand-snippet' : '<Tab>'
+
+" Jump forward in through tabstops in insert and visual mode with Control-f
+imap <silent><expr> <C-f> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<C-f>'
+smap <silent><expr> <C-f> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<C-f>'
+
+]])

@@ -37,9 +37,7 @@ local plugins = {
     ft = { "markdown" },
     build = function() vim.fn["mkdp#util#install"]() end,
   },
-  {
-    "L3M0N4D3/LuaSnips",
-  },
+  { url = "https://github.com/L3MON4D3/LuaSnip.git" },
   {
     "mfussenegger/nvim-lint",
     event = "VeryLazy",
