@@ -5,6 +5,9 @@ end
 # Created by `pipx` on 2024-01-14 00:32:42
 set PATH $PATH /home/guillaume/.local/bin
 
+set PATH $PATH:/usr/local/texlive/2023/bin/x86_64-linux
+set EDITOR "nvim"
+
 fish_config theme choose "Rosé Pine Moon"
 
 if [ "$TERM" = "linux" ]; then

@@ -1,5 +1,11 @@
 local dap = require("dap")
 
+-- require('js-debug-adapter').setup({
+--     debugger_path = vim.fn.stdpath('data') .. '/mason/packages/js-debug-adapter',
+--     debugger_cmd = { 'js-debug-adapter' },
+--     adapters = { 'pwa-node', 'pwa-chrome', 'pwa-msedge', 'node-terminal', 'pwa-extensionHost' },
+-- })
+--
 dap.adapters["pwa-node"] = {
   type = "server",
   host = "127.0.0.1",

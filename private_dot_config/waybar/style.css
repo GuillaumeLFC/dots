@@ -37,7 +37,7 @@ tooltip {
 #workspaces button.active {
   color: pink;
   border-radius : 30px;
-  background: #1e1e2e;
+  background: #232136;
 }
 
 #workspaces button.focused {
@@ -82,7 +82,7 @@ tooltip {
 #custom-arch
 
 #modbackground {
-  background: #1e1e2e;
+  background: #232136;
   opacity: 1.0;
   padding: 0px 4px;
   margin-top: 5px;
@@ -91,9 +91,9 @@ tooltip {
 }
 
 #backlight {
-  border-radius: 30px 30px 30px 30px;
-  background: #1e1e2e;
-  color : #D7B432;
+  border-radius: 30px 0px 0px 30px;
+  background : #232136;
+  color : #DB9423; 
   opacity: 1.0;
   padding: 2px;
   margin-top: 8px;
@@ -101,11 +101,12 @@ tooltip {
 }
 
 #custom-arch {
-  border-radius : 30px;
-  background: #1e1e2e;
+  border-radius : 30px 0px 0px 30px;
+  background: #232136;
   color: #2791C9;
   margin-bottom: 8px;
   margin-top : 8px;
+  margin-right : 0px;
   padding : 5px;
 }
 
@@ -160,7 +161,7 @@ tooltip {
 
 #clock {
   color: #82AFC2;
-  border-radius: 30px;
+  border-radius: 0px 30px 30px 0px;
   /* margin-left: 10px; */
   padding: 5px;
   margin-top: 8px;
@@ -190,11 +191,12 @@ tooltip {
 
 #battery {
   color: #a6e3a1;
-  border-radius: 7px;
+  border-radius: 0px 30px 30px 0px;
   margin-right: 5px;
   border-left: 0px;
   margin-top: 8px;
   margin-bottom: 8px;
+  margin-left: 0px;
   padding : 8px;
 }
 
