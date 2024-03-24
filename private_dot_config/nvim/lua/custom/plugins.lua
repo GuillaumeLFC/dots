@@ -31,6 +31,7 @@ local plugins = {
         "lua",
         "cpp",
         "latex",
+        "hyprlang",
         "typescript",
       },
      },
