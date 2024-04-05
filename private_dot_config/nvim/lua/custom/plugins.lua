@@ -10,6 +10,9 @@ local plugins = {
     "rose-pine/neovim", name = "rose-pine"
   },
   {
+    "nvim-neotest/nvim-nio",
+  },
+  {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
@@ -49,6 +52,9 @@ local plugins = {
     config = function ()
       require"custom.configs.lint"
     end
+  },
+  {
+    "kdheepak/lazygit.nvim",
   },
   {
     "mhartington/formatter.nvim",

@@ -6,8 +6,8 @@
   font-size: 14px;
   min-height: 20px;
   opacity: 1.0;
-
 }
+
 window#waybar {
     background: none;
     border-radius: 0px
@@ -31,69 +31,31 @@ tooltip {
 #custom-spotify,
 #custom-arch
 
-#cpu {
-  background: @theme_base_color;
-  color : #ea9a97;
-  border-radius : 30px 0px 0px 30px;
-  margin-top : 12px;
-  margin-bottom : 12px;
-}
-
-#workspaces {
-  background : @theme_base_color;
-  border-radius : 10px;
-  margin-bottom : 12px;
-  margin-top : 12px;
-}
-
-#workspaces button.active {
-  color : #908caa;
-
-}
-
-#workspaces button {
-  color : #56526e;
-  background : @theme_secondary_color;
-}
-
-#memory {
-  background : @theme_base_color;
-  border-radius : 0px;
-  color : #c4a7e7;
-}
-
-#battery.power {
-  background : @theme_base_color;
-  border-radius : 0px 30px 30px 0px;
-  color : #f6c177;
-  margin-top : 12px;
-  margin-bottom : 12px;
-}
-
 #modbackground {
-  background: @theme_base_color;
+  background: #232136;
   opacity: 1.0;
   padding: 0px 4px;
-  margin-top : 12px;
-  margin-bottom : 12px;
+  margin-top: 5px;
+  margin-bottom: 6px;
   /* border: 1px solid #b5b0a7; */
 }
 
 #backlight {
   border-radius: 30px 0px 0px 30px;
-  background : @theme_base_color;
+  background : #232136;
   color : #DB9423; 
   opacity: 1.0;
-  margin-top : 12px;
-  margin-bottom : 12px;
+  padding: 2px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 #custom-arch {
   border-radius : 30px 0px 0px 30px;
-  background: @theme_base_color;
-  color: #3e8fb0;
-  margin-bottom : 12px;
-  margin-top : 12px;
+  background: #232136;
+  color: #2791C9;
+  margin-bottom: 8px;
+  margin-top : 8px;
   margin-right : 0px;
   padding : 5px;
 }
@@ -102,8 +64,8 @@ tooltip {
   color: #89b4fa;
   border-radius: 30px 0px 0px 30px;
   border-left: 30px;
-  margin-top : 12px;
-  margin-bottom : 12px;
+  margin-top:8px;
+  margin-bottom:8px;
   border-right: 0px;
 }
 
@@ -127,8 +89,8 @@ tooltip {
   border-radius: 0px 30px 30px 0px;
   /* margin-left: 10px; */
   padding: 5px;
-  margin-top : 12px;
-  margin-bottom : 12px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   border-right: 0px;
   opacity: 1;
 
@@ -139,8 +101,8 @@ tooltip {
   border-radius: 30px;
   border-left: 0px;
   border-right: 0px;
-  margin-top : 12px;
-  margin-bottom : 12px;
+  margin-top : 8px;
+  margin-bottom : 8px;
   padding: 5px;
   opacity: 1.0;
 }
@@ -157,16 +119,16 @@ tooltip {
   border-radius: 0px 30px 30px 0px;
   margin-right: 5px;
   border-left: 0px;
-  margin-top : 12px; 
-  margin-bottom : 12px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   margin-left: 0px;
   padding : 8px;
 }
 
 #custom-spotify {
   border-radius: 30px;
-  margin-bottom : 12px;
-  margin-top : 12px;
+  margin-bottom : 8px;
+  margin-top: 8px;
   padding : 5px;
   border-right: 0px;
   opacity: 1.0;
@@ -177,8 +139,8 @@ tooltip {
   color:#26CE60 ;
   border-right: 0px;
   border-left : 0px;
-  margin-top : 12px;
-  margin-bottom : 12px;
+  margin-top : 8px;
+  margin-bottom : 8px;
   padding : 5px;
 }
 
