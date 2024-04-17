@@ -20,7 +20,6 @@ local plugins = {
         "lua-language-server",
         "js-debug-adapter",
         "eslint-lsp",
-        "prettier",
         "markdownlint",
         "latexindent",
         "typescript-language-server",
@@ -47,21 +46,18 @@ local plugins = {
   },
   { url = "https://github.com/L3MON4D3/LuaSnip.git" },
   {
-    "mfussenegger/nvim-lint",
-    event = "VeryLazy",
-    config = function ()
-      require"custom.configs.lint"
-    end
-  },
-  {
     "kdheepak/lazygit.nvim",
   },
   {
-    "mhartington/formatter.nvim",
-    event = "VeryLazy",
+    "GuillaumeLFC/null-ls.nvim",
+    events = "VeryLazy",
     opts = function ()
-      return require "custom.configs.formatter"
-    end
+      return require "custom.configs.null-ls"
+    end,
+  },
+  {
+    "mxsdev/nvim-dap-vscode-js",
+    dependencies = "mfussenegger/nvim-dap",
   },
   {
     "mfussenegger/nvim-dap",
@@ -73,7 +69,7 @@ local plugins = {
   {
     "rcarriga/nvim-dap-ui",
     event = "VeryLazy",
-    dependencies = "mfussenegger/nvim-dap",
+    dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"},
     config = function ()
       local dap = require("dap")
       local dapui = require("dapui")
