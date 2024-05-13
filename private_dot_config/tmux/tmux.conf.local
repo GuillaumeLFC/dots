@@ -27,7 +27,7 @@ tmux_conf_new_session_prompt=false
 #   - true
 #   - false (default)
 #   - disabled (do not modify new-session bindings)
-tmux_conf_new_session_retain_current_path=false
+tmux_conf_new_session_retain_current_path=true
 
 
 # -- windows & pane creation ---------------------------------------------------
@@ -54,7 +54,7 @@ tmux_conf_new_pane_retain_current_path=true
 #   - true
 #   - false (default)
 #   - disabled (do not modify split-window bindings)
-tmux_conf_new_pane_reconnect_ssh=false
+tmux_conf_new_pane_reconnect_ssh=true
 
 
 # -- display -------------------------------------------------------------------
@@ -87,59 +87,20 @@ tmux_conf_theme=enabled
 tmux_conf_theme_colour_1="#232136"    # dark gray
 tmux_conf_theme_colour_2="#303030"    # gray
 tmux_conf_theme_colour_3="#8a8a8a"    # light gray
-tmux_conf_theme_colour_4="#00afff"    # light blue
+tmux_conf_theme_colour_4="#3e8fb0"    # light blue
 tmux_conf_theme_colour_5="#56526e"    # yellow
 tmux_conf_theme_colour_6="#232136"    # dark gray
 tmux_conf_theme_colour_7="#e4e4e4"    # white
 tmux_conf_theme_colour_8="#232136"    # dark gray
-tmux_conf_theme_colour_9="#f6c177"    # yellow
+tmux_conf_theme_colour_9="#7287fd"    # yellow
 tmux_conf_theme_colour_10="#ff00af"   # pink
 tmux_conf_theme_colour_11="#5fff00"   # green
 tmux_conf_theme_colour_12="#8a8a8a"   # light gray
-tmux_conf_theme_colour_13="#e4e4e4"   # white
+tmux_conf_theme_colour_13="#e0def4"   # white
 tmux_conf_theme_colour_14="#232136"   # dark gray
 tmux_conf_theme_colour_15="#232136"   # dark gray
-tmux_conf_theme_colour_16="#1e66f5"   # red
-tmux_conf_theme_colour_17="#3e8fb0"   # white
-
-## Theme pour les pc
-# tmux_conf_theme_colour_1="#232136"    # dark gray
-# tmux_conf_theme_colour_2="#303030"    # gray
-# tmux_conf_theme_colour_3="#8a8a8a"    # light gray
-# tmux_conf_theme_colour_4="#00afff"    # light blue
-# tmux_conf_theme_colour_5="#56526e"    # yellow
-# tmux_conf_theme_colour_6="#232136"    # dark gray
-# tmux_conf_theme_colour_7="#e4e4e4"    # white
-# tmux_conf_theme_colour_8="#232136"    # dark gray
-# tmux_conf_theme_colour_9="#f6c177"    # yellow
-# tmux_conf_theme_colour_10="#ff00af"   # pink
-# tmux_conf_theme_colour_11="#5fff00"   # green
-# tmux_conf_theme_colour_12="#8a8a8a"   # light gray
-# tmux_conf_theme_colour_13="#e4e4e4"   # white
-# tmux_conf_theme_colour_14="#232136"   # dark gray
-# tmux_conf_theme_colour_15="#232136"   # dark gray
-# tmux_conf_theme_colour_16="#1e66f5"   # red
-# tmux_conf_theme_colour_17="#3e8fb0"   # white
-
-# Theme du pi
-# tmux_conf_theme_colour_1="#232136"    # dark gray
-# tmux_conf_theme_colour_2="#303030"    # gray
-# tmux_conf_theme_colour_3="#8a8a8a"    # light gray
-# tmux_conf_theme_colour_4="#00afff"    # light blue
-# tmux_conf_theme_colour_5="#56526e"    # yellow
-# tmux_conf_theme_colour_6="#232136"    # dark gray
-# tmux_conf_theme_colour_7="#e4e4e4"    # white
-# tmux_conf_theme_colour_8="#232136"    # dark gray
-# tmux_conf_theme_colour_9="#f6c177"    # yellow
-# tmux_conf_theme_colour_10="#ff00af"   # pink
-# tmux_conf_theme_colour_11="#5fff00"   # green
-# tmux_conf_theme_colour_12="#8a8a8a"   # light gray
-# tmux_conf_theme_colour_13="#e4e4e4"   # white
-# tmux_conf_theme_colour_14="#232136"   # dark gray
-# tmux_conf_theme_colour_15="#232136"   # dark gray
-# tmux_conf_theme_colour_16="#ea9a97"   # red
-# tmux_conf_theme_colour_17="#c4a7e7"   # white
-
+tmux_conf_theme_colour_16="#391F61"   # red #9ccfd8
+tmux_conf_theme_colour_17="#cba6f7"   # white
 
 # default theme (ansi)
 #tmux_conf_theme_colour_1="colour0"
@@ -307,10 +268,10 @@ tmux_conf_theme_right_separator_sub='\uE0B3'  #   PowerlineSymbols.otf font, see
 #     - #{username}
 #     - #{username_ssh}
 tmux_conf_theme_status_left="  #S "
-tmux_conf_theme_status_right=" #{prefix} | #{username}#{root} | #{hostname}#{hostname_ssh} "
+tmux_conf_theme_status_right=" #{prefix} | #{username}#{root} | #{hostname} #{hostname_ssh} "
 
 # status left style
-tmux_conf_theme_status_left_fg="$tmux_conf_theme_colour_6,$tmux_conf_theme_colour_7,$tmux_conf_theme_colour_8"
+tmux_conf_theme_status_left_fg="$tmux_conf_theme_colour_6,$tmux_conf_theme_colour_8,$tmux_conf_theme_colour_8"
 tmux_conf_theme_status_left_bg="$tmux_conf_theme_colour_9,$tmux_conf_theme_colour_10,$tmux_conf_theme_colour_11"
 tmux_conf_theme_status_left_attr="bold,none,none"
 
@@ -411,7 +372,7 @@ tmux_conf_copy_to_os_clipboard=false
 #set -g history-limit 10000
 
 # start with mouse mode enabled
-#set -g mouse on
+set -g mouse on
 
 # force Vi mode
 #   really you should export VISUAL or EDITOR environment variable, see manual
