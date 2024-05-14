@@ -1,4 +1,10 @@
 if status is-interactive
+and not set -q TMUX
+    exec tmux
+end
+
+if status is-interactive
+
   oh-my-posh init fish --config ~/.config/ohmyposh/easy-term.json | source
 end
 
@@ -32,3 +38,5 @@ if [ "$TERM" = "linux" ]; then
 	# get rid of artifacts
 	clear
 end
+
+# thefuck --alias | source
