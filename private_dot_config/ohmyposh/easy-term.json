@@ -6,7 +6,7 @@
       "newline": true,
       "segments": [
         {
-          "background": "#0c7bbb",
+          "background": "#637D88",
           "foreground": "#ffffff",
           "leading_diamond": "\u256d\u2500\ue0b2",
           "properties": {
@@ -30,16 +30,9 @@
           "template": " {{ if .WSL }}\ue712 on {{ end }}{{ .Icon }}  ",
           "type": "os"
         },
+        
         {
-          "background": "#637D88",
-          "foreground": "#ffffff",
-          "powerline_symbol": "\ue0b0",
-          "style": "diamond",
-          "template": " pc-crimé ",
-          "type": "text"
-        },
-        {
-          "background": "#82B1C5",
+          "background": "#9ccfd8",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -111,7 +104,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#0c7bbb",
+          "foreground": "#637D88",
           "style": "plain",
           "template": "\u2570\u2500",
           "type": "text"
