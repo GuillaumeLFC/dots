@@ -7,6 +7,9 @@ local plugins = {
     end,
   },
   {
+    "sakhnik/nvim-gdb",
+  },
+  {
     "rose-pine/neovim", name = "rose-pine"
   },
   {

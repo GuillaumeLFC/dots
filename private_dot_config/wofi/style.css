@@ -1,8 +1,8 @@
 window {
     margin: 0px;
     background-color: #191724;
-    border-radius: 30px;
-    border: 1px solid #eb6f92;
+    border-radius: 20px;
+    border: 2px solid #eb6f92;
     color: #e0def4;
     font-family: 'Monofur Nerd Font';
     font-size: 20px;
@@ -10,9 +10,8 @@ window {
 
 #input {
     margin: 5px;
-    border-radius: 0px;
+    border-radius: 20px;
     border: none;
-    border-radius: 20px;;
     color: #eb6f92;
     background-color: #26233a;
     
@@ -20,25 +19,28 @@ window {
 
 #inner-box {
     margin: 5px;
-    border: 0;
+    border: none;
     background-color: #26233a;
     color: #191724;
-    border-radius: 20px;
+    border-radius: 20px;;
 }
 
 #outer-box {
     margin: 15px;
-    border: 0;
+    border: none;
+    border-radius: 20px;;
     background-color: #191724;
 }
 
 #scroll {
     margin: 0px;
     border: none;
+    border-radius: 20px;;
 }
 
 #text {
     margin: 5px;
+    border-radius: 20px;;
     border: none;
     color: #e0def4;
 } 

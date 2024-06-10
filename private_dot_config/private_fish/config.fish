@@ -1,8 +1,33 @@
-if status is-interactive
-and not set -q TMUX
-    exec tmux
+# if status is-interactive
+# and not set -q TMUX
+#     exec tmux
+# end
+
+# Function to check the status of Tmux sessions
+function check_tmux
+    # Get the list of tmux sessions
+    set sessions (tmux list-sessions 2>/dev/null)
+    
+    if test -z "$sessions"
+        # No sessions exist, create a new session
+        tmux new-session
+    else
+        # Check if there is a detached session
+        set detached_sessions (tmux list-sessions | grep -c "(detached)")
+        set attached_sessions (tmux list-sessions | grep -c "(attached)")
+        
+        if test $detached_sessions -gt 0
+            # Attach to the first detached session
+            tmux attach-session -t $(tmux list-sessions -F "#S" | grep -v "(attached)" | head -n 1)
+        else if test $attached_sessions -gt 0
+            # Do nothing, already an attached session
+            return
+        end
+    end
 end
 
+# Call the function during shell initialization
+check_tmux
 if status is-interactive
 
   oh-my-posh init fish --config ~/.config/ohmyposh/easy-term.json | source
@@ -14,7 +39,7 @@ set PATH $PATH /home/guillaume/.local/bin
 set PATH $PATH:/usr/local/texlive/2023/bin/x86_64-linux
 set EDITOR "nvim"
 set XDG_CONFIG_HOME "~/.config"
-fish_config theme choose "Rosé Pine Moon"
+fish_config theme choose "Rosé Pine"
 
 if [ "$TERM" = "linux" ]; then
 	/bin/echo -e "
