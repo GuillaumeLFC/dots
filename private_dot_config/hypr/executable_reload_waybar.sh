@@ -1,3 +1,3 @@
-#!/bin/bash
-kill waybar
+#!/bin/fish
+kill waybar 
 waybar
