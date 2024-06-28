@@ -7,13 +7,13 @@ local plugins = {
     end,
   },
   {
-    "sakhnik/nvim-gdb",
-  },
-  {
     "rose-pine/neovim", name = "rose-pine"
   },
   {
     "nvim-neotest/nvim-nio",
+  },
+  {
+    "andweeb/presence.nvim",
   },
   {
     "williamboman/mason.nvim",
@@ -24,7 +24,6 @@ local plugins = {
         "js-debug-adapter",
         "eslint-lsp",
         "markdownlint",
-        "latexindent",
         "typescript-language-server",
       }
     }
@@ -35,7 +34,6 @@ local plugins = {
       ensure_installed = {
         "lua",
         "cpp",
-        "latex",
         "hyprlang",
         "typescript",
       },
@@ -51,13 +49,13 @@ local plugins = {
   {
     "kdheepak/lazygit.nvim",
   },
-  {
-    "GuillaumeLFC/null-ls.nvim",
-    events = "VeryLazy",
-    opts = function ()
-      return require "custom.configs.null-ls"
-    end,
-  },
+  -- {
+  --   "GuillaumeLFC/null-ls.nvim",
+  --   events = "VeryLazy",
+  --   opts = function ()
+  --     return require "custom.configs.null-ls"
+  --   end,
+  -- },
   {
     "mxsdev/nvim-dap-vscode-js",
     dependencies = "mfussenegger/nvim-dap",
