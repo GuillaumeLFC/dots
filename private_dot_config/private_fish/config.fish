@@ -7,27 +7,6 @@
 # function check_tmux
 #     # Get the list of tmux sessions
 #     set sessions (tmux list-sessions 2>/dev/null)
-#     
-#     if test -z "$sessions"
-#         # No sessions exist, create a new session
-#         tmux new-session
-#     else
-#         # Check if there is a detached session
-#         set detached_sessions (tmux list-sessions | grep -c "(detached)")
-#         set attached_sessions (tmux list-sessions | grep -c "(attached)")
-#         
-#         if test $detached_sessions -gt 0
-#             # Attach to the first detached session
-#             tmux attach-session -t $(tmux list-sessions -F "#S" | grep -v "(attached)" | head -n 1)
-#         else if test $attached_sessions -gt 0
-#             # Do nothing, already an attached session
-#             return
-#         end
-#     end
-# end
-#
-# # Call the function during shell initialization
-# check_tmux
 if status is-interactive
 
   oh-my-posh init fish --config ~/.config/ohmyposh/easy-term.json | source
@@ -64,4 +43,5 @@ if [ "$TERM" = "linux" ]; then
 	clear
 end
 
-# thefuck --alias | source
+thefuck --alias | source
+zoxide init fish | source

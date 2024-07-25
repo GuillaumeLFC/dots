@@ -5,8 +5,9 @@
     "mod": "dock",
     "exclusive": true,
     "margin-bottom":-2,
-    "opacity": 50,
+    "opacity": 0,
     "margin-top":6,
+    "fixed-center":false,
     "margin-left": 18,
     "margin-right":18,
     "gtk-layer-shell": true,
@@ -22,7 +23,6 @@
   "cpu",
   "memory",
   "temperature",
-  "custom/padd",
 
   ],
 	
@@ -31,11 +31,6 @@
   ],
   
 	"modules-right": [
-  "custom/padd",
-  "custom/l_end",
-  "custom/r_end",
-  "custom/l_end",
-  "custom/padd",
   "wireplumber",
   "backlight",
   "battery",
@@ -198,7 +193,7 @@
     "wireplumber": {
     "format": "   {volume}",
     "format-muted": "  ",
-    "on-click": "helvum",
+    "on-click": "dex /home/guillaume/.local/share/applications/org.pulseaudio.pavucontrol.desktop",
     "on-click-right" : "/home/guillaume/.config/hypr/basculer_sources.py",
     "max-volume": 150,
     "scroll-step": 0.2
