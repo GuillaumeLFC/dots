@@ -2,7 +2,7 @@
 
 rm ~/.wallpaper.*
 rm /usr/share/sddm/themes/sddm-astronaut-theme/wallpaper.*
-wallpaper=$(find ~/wallpapers/ -type f | shuf -n 1)
+wallpaper=$(find ~/wallpapers/* | shuf -n 1)
 echo $wallpaper
 extension=${wallpaper##*.}
 cp $wallpaper ~/.wallpaper.$extension
