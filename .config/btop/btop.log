@@ -5,3 +5,9 @@
 2024/01/16 (21:31:11) | INFO: Logger set to INFO
 2024/01/16 (21:31:14) | INFO: Logger set to INFO
 2024/01/16 (21:31:16) | INFO: Logger set to INFO
+
+2024/10/08 (15:00:50) | ===> btop++ v.1.4.0
+2024/10/08 (15:00:50) | WARNING: Intel GPU: Failed to initialize PMU
+
+2024/10/08 (15:00:50) | ===> btop++ v.1.4.0
+2024/10/08 (15:00:50) | WARNING: Intel GPU: Failed to initialize PMU
