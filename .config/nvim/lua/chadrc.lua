@@ -17,7 +17,8 @@ M.base46 = {
 M.mason = {
   pkgs = {
     "clangd",
-    "jdtls"
+    "jdtls",
+    "texlab",
   }
 }
 return M
