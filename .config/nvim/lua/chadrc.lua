@@ -4,9 +4,7 @@
 
 ---@type ChadrcConfig
 local M = {}
-M.nvdash = {
-    load_on_startup = true,
-  }
+
 M.base46 = {
 	theme = "rosepine",
 
@@ -16,4 +14,10 @@ M.base46 = {
 	-- },
 }
 
+M.mason = {
+  pkgs = {
+    "clangd",
+    "jdtls"
+  }
+}
 return M

@@ -4,7 +4,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls", "clangd","bashls","jdtls"}
+local servers = { "html", "cssls", "clangd", "gradle_ls" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
@@ -16,38 +16,7 @@ for _, lsp in ipairs(servers) do
   }
 end
 
-lspconfig.texlab.setup{
-  cmd = {"texlab"},
-  settings = {
-    texlab = {
-      auxDirectory = "./aux/",
-      bibtexFormatter = "texlab",
-      build = {
-        args = { "-pdf", "-interaction=nonstopmode", "-synctex=1", "-g", "%f" },
-        executable = "latexmk",
-        forwardSearchAfter = false,
-        onSave = true,
-      },
-      chktex = {
-        onEdit = true,
-        onOpenAndSave = true,
-      },
-      diagnosticsDelay = 300,
-      formatterLineLength = 80,
-      forwardSearch = {
-        args = {}
-      },
-      latexFormatter = "latexindent",
-      latexindent = {
-        modifyLineBreaks = false
-      }
-    }
-  },
-}
--- lspconfig.digestif.setup{}
--- lspconfig.textlsp.setup{}
---
-lspconfig.jdtls.setup{}
+lspconfig.jdtls.setup{cmd = {'jdtls'} } --yay -S jdtls
 
 -- configuring single server, example: typescript
 -- lspconfig.ts_ls.setup {

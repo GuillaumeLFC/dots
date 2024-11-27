@@ -13,22 +13,13 @@ return {
     end,
   },
 
-  {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "clangd",
-        "digestif",
-      }
-    }
-  },
-  {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
-  			"vim", "lua", "vimdoc", "latex",
-       "html", "css", "cpp", "java"
-  		},
-  	},
-  },
+  -- {
+  -- 	"nvim-treesitter/nvim-treesitter",
+  -- 	opts = {
+  -- 		ensure_installed = {
+  -- 			"vim", "lua", "vimdoc",
+  --      "html", "css"
+  -- 		},
+  -- 	},
+  -- },
 }
