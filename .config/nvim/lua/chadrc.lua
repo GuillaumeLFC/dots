@@ -19,6 +19,7 @@ M.mason = {
     "clangd",
     "jdtls",
     "texlab",
+    "docker-compose-language-service"
   }
 }
 return M

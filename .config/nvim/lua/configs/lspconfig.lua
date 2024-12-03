@@ -4,7 +4,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls", "clangd", "gradle_ls" }
+local servers = { "html", "cssls", "clangd", "gradle_ls","dockerls"}
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
@@ -16,6 +16,7 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+lspconfig.docker_compose_language_service.setup{}
 lspconfig.jdtls.setup{cmd = {'jdtls'} } --yay -S jdtls
 
 lspconfig.texlab.setup{
