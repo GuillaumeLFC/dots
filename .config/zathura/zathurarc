@@ -46,3 +46,4 @@ set recolor-keephue             "true"
 set synctex true
 set synctex-editor-command "nvim / %{line} %{input}"
 set guioptions none
+set selection-clipboard clipboard
