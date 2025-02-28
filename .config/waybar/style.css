@@ -41,6 +41,7 @@ tooltip {
 #wireplumber,
 #workspaces,
 #clock,
+#custom-vpn,
 #custom-arch
 {
   margin-top: 12px;
@@ -142,6 +143,12 @@ tooltip {
   border-radius : 0px 30px 30px 0px;
 }
 
+#custom-vpn {
+  background: #8aadf4;
+  /*background: #a6da95;*/
+  border-radius: 30px;
+  padding: 5;
+}
 
 #network {
   background: #831A39;

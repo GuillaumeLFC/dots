@@ -2,7 +2,7 @@
 
 wallpaper_dir="/home/guillaume/wallpapers/"
 
-wallpaper=$(ls "$wallpaper_dir" | wofi --dmenu --location=top_right --width=600 --height=200 --xoffset=-60 -l 3 -i -p "Choisir un fond d'écran")
+wallpaper=$(ls "$wallpaper_dir" | wofi --dmenu --location=top_right --width=600 --height=200 --allow-images --xoffset=-60 -l 3 -i -p "Choisir un fond d'écran")
 
 if [[ $wallpaper = "" ]]; then 
   exit 

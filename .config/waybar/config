@@ -35,6 +35,8 @@
   "backlight",
   "battery",
   "custom/padd",
+  "custom/vpn",
+  "custom/padd",
   "network",
   "custom/padd"
   ],
@@ -152,6 +154,12 @@
         "interval": 5
     },
 
+    "custom/vpn": {
+      "interval": 3,
+      "format": "{}",
+      "exec": "ip add show | grep -qF raspberrypi && echo  Connecté || echo  Déconnecté",
+    },
+    
     "bluetooth": {
         "format": "",
         "format-disabled": "", // an empty format will hide the module
