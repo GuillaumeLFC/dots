@@ -14,12 +14,19 @@ M.base46 = {
 	-- },
 }
 
+M.ui = {
+  tabufline = {
+    order = {"treeOffset", "buffers", "tabs"}
+  },
+}
 M.mason = {
   pkgs = {
     "clangd",
     "jdtls",
     "texlab",
-    "docker-compose-language-service"
+    "docker-compose-language-service",
+    "pyright",
+    "textlsp",
   }
 }
 return M
