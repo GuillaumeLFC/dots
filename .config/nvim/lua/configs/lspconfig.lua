@@ -18,23 +18,23 @@ end
 
 lspconfig.docker_compose_language_service.setup{}
 lspconfig.jdtls.setup{cmd = {'jdtls'} } --yay -S jdtls
-
-lspconfig.textlsp.setup{
-  analysers = {
-    ollama = {
-          enabled = true,
-          check_text = {
-            on_open = false,
-            on_save = true,
-            on_change = true,
-          },
-          model = "phi3:3.8b-instruct",  -- smaller but faster model
-          -- model = "phi3:14b-instruct",  -- more accurate
-          max_token = 50,
-        },
-  }
-
-}
+--
+-- lspconfig.textlsp.setup{
+--   analysers = {
+--     ollama = {
+--           enabled = true,
+--           check_text = {
+--             on_open = false,
+--             on_save = true,
+--             on_change = true,
+--           },
+--           model = "phi3:3.8b-instruct",  -- smaller but faster model
+--           -- model = "phi3:14b-instruct",  -- more accurate
+--           max_token = 50,
+--         },
+--   }
+--
+-- }
 
 lspconfig.texlab.setup{
   cmd = {"texlab"},
