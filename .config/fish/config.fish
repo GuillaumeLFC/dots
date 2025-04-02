@@ -9,6 +9,7 @@
 #     set sessions (tmux list-sessions 2>/dev/null)
 if status is-interactive
 
+  fastfetch -l arch3
   oh-my-posh init fish --config ~/.config/ohmyposh/easy-term.json | source
 end
 
