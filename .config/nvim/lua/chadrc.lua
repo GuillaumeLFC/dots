@@ -6,6 +6,7 @@ local M = {}
 
 M.base46 = {
 	theme = "rosepine",
+  integrations = {"render-markdown"},
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
