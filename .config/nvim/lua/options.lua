@@ -3,9 +3,11 @@ require "nvchad.options"
 -- add yours here!
 
 local o = vim.o
-o.relativenumber = true
 o.termguicolors = true
 vim.notify = require("notify")
-
--- o.conceallevel = 1
+o.relativenumber = true
+o.linebreak = true
+o.breakindent = true
+o.wrap = true
+o.conceallevel = 1
 -- o.cursorlineopt ='both' -- to enable cursorline!

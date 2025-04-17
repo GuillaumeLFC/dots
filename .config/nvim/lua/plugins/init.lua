@@ -47,7 +47,14 @@ return {
     ---@type render.md.UserConfig
     opts = require "configs.render-markdown",
   },
-  { 'ryleelyman/latex.nvim', opts = {} , ft = {"markdown"}},
+  {
+    "jbyuki/nabla.nvim",
+    ft = {"markdown", "latex"},
+    config = function ()
+      require("nabla").enable_virt()
+    end,
+  },
+  -- { 'ryleelyman/latex.nvim', opts = {} , ft = {"markdown"}},
   {
     "folke/noice.nvim",
     event = "VeryLazy",
@@ -63,9 +70,39 @@ return {
     opts = require "configs.nvim-notify",
   },
   {
-    "gelguy/wilder.nvim",
+    "andweeb/presence.nvim",
     event = "VeryLazy",
-    opts = {modes = {':', '/', '?'}},
-    dependencies = {"roxma/nvim-yarp"},
-  }
+    opts = require "configs.presence",
+  },
+  {
+    "kdheepak/lazygit.nvim",
+    lazy = true,
+    cmd = {
+        "LazyGit",
+        "LazyGitConfig",
+        "LazyGitCurrentFile",
+        "LazyGitFilter",
+        "LazyGitFilterCurrentFile",
+    },
+    -- optional for floating window border decoration
+    dependencies = {
+        "nvim-lua/plenary.nvim",
+    },
+    -- setting the keybinding for LazyGit with 'keys' is recommended in
+    -- order to load the plugin when the command is run for the first time
+    keys = {
+        { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
+    }
+  },
+  {
+  "folke/snacks.nvim",
+  ---@type snacks.Config
+  opts = require "configs.snacks"
+},
+  -- {
+  --   "gelguy/wilder.nvim",
+  --   event = "VeryLazy",
+  --   opts = {modes = {':', '/', '?'}},
+  --   dependencies = {"roxma/nvim-yarp"},
+  -- }
 }

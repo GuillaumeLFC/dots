@@ -10,6 +10,8 @@ map("i", "<D->>", ">")
 map("v", "J", ":m '>+1<CR>gv=gv")
 map("v", "K", ":m '<-2<CR>gv=gv")
 
+map({"v", "n"},"j", "gj")
+map({"v", "n"},"k", "gk")
 map("i", "{", "<Nop>")
 map("i", "lp", ":dh")
 map("i", "<Esc>", "<Nop>")
