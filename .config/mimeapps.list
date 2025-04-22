@@ -1,0 +1,7 @@
+[Added Associations]
+text/plain=nvim.desktop;
+
+[Default Applications]
+x-scheme-handler/betterdiscord=discord.desktop
+x-scheme-handler/http=librewolf.desktop
+x-scheme-handler/https=librewolf.desktop
