@@ -19,6 +19,7 @@ map({"i", "n", "v"}, "<Left>", "<Nop>")
 map({"i", "n", "v"}, "<Right>", "<Nop>")
 map({"i", "n", "v"}, "<Down>", "<Nop>")
 map({"i", "n", "v"}, "<Up>", "<Nop>")
+map({"n","v"}, "é", "`")
 
 local nomap = vim.keymap.del
  -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>", "<Nop>")

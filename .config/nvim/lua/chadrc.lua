@@ -27,6 +27,7 @@ M.mason = {
     "docker-compose-language-service",
     "pyright",
     "textlsp",
+    "tree-sitter-cli",
   }
 }
 return M
