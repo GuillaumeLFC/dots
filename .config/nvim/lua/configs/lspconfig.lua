@@ -27,7 +27,7 @@ lspconfig.texlab.setup{
       auxDirectory = "./aux/",
       bibtexFormatter = "texlab",
       build = {
-        args = { "-pdf", "-interaction=nonstopmode", "-synctex=1", "-g", "%f" },
+        args = { "-pdf", "-interaction=nonstopmode", "-synctex=1","-g", "%f" },
         executable = "latexmk",
         forwardSearchAfter = false,
         onSave = true,
